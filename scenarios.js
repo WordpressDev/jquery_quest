@@ -135,28 +135,9 @@ var C = {
 };
 
 //scenarios
-var S = {
-    shoot_n_angel: function() {
-        for (var i=0;i<5;i++) {
-            //later
-            //new C.angel().fly();
-        }
-        //later
-        //new C.arrow();
-    }
-};
+var S = [];
 
-$(S.shoot_n_angel())
+var teacher = new C.teacher();
 
-teacher = new C.teacher().show().delay(2000).say('Feeling good today?').delay(2000).say('Wanna learn jQuery?').delay(2000).say('Try typing in the box').delay(2000).say('I\'ll be right behind you!').delay(2000).hide().delay(10000);
-teacher.show().delay(2000).say('So...').delay(2000).say('Did you do anything exciting?').delay(2000).say('Ok, watch me do it!').delay(2000)
-
-var example1 = '$(\'<div class="angel" />\') \n\
-.appendTo("#arena") \n\
-.animate({ \n\
-    "left":  "50%", \n\
-    "right": "50%" \n\
-})'
-
-teacher.write(example1).delay(2000).say('Don\' forget to press Run now to run the code!');
-
+var scenario = location.hash.substr(1).split('/');
+$.getScript(path_start+'authors/kk/courses/'+scenario[0]+'/scenarios/scenario_'+scenario[1]+'.js')
