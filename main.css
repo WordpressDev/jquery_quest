@@ -1,0 +1,129 @@
+
+body,
+textarea
+{
+  font-size: 14px;
+  font-family: 'Lucida Grande', 'Lucida Sans', Verdana, Arial, sans-serif;
+  resize: none;
+}
+
+p, form, ul, li {
+  margin:0;
+  padding:0;
+}
+
+#root {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+}
+
+#feedback {
+    position: absolute;
+    top:-4em;
+    padding: 1em;
+    height: 1.5em;
+    left: 10em; right: 10em;
+    background-color: InfoBackground;
+    -moz-box-shadow: 0 0 3px #999;
+    overflow: hidden;
+    z-index: 2;
+}
+
+#hint {
+  position: absolute;
+  bottom:.3em;
+  left: 14em;
+  color: #999;
+  text-shadow: 1px 1px 0 #EEE;
+  font-size: .7em;
+}
+
+#arena {
+    position: absolute;
+    top: 3.5em; bottom: 145px;
+    left: 1em; right: 1em;
+    z-index: 1;
+    overflow: hidden;
+}
+    #arena div {
+        position: absolute;
+    }
+    
+#console_wrap {
+    height: 144px;
+    position: absolute;
+    bottom: 0; left: 0; right:0;
+    background: #DDD;
+    border-top: 1px solid #BBB;
+}
+
+#code,
+#code_shadow
+{   
+    position: absolute;
+    width: 96%;
+    top: 1em;
+    margin:0 1%;
+    height: 90px;
+    padding: 9px;
+    border: 1px solid #BBB;
+    background-color: #F8F8F8;
+    border-width: 1px;
+    line-height: 18px;
+}
+
+#code {
+    background-color: transparent;
+    z-index: 2;
+}
+
+#code_shadow {
+    z-index:1;
+    color: #F8F8F8;
+}
+
+#code_shadow.active {
+  color: #AAA;
+}
+
+#run {
+    position: absolute;
+    bottom:0;
+    margin-left: 1%;
+    height: 20px;
+    background-color: #DDD;
+    border: 1px solid #BBB;
+    border-color: #FFF #FFF #BBB #BBB;
+    color: #C81E2B;
+    padding:0 2em;
+    left: 1px;
+    font-weight: bold;
+}
+#run:focus,
+#run:active,
+#run:hover
+ {
+    outline:none;
+    background-color: #C81E2B;
+    color: white;
+}
+
+#teacher {
+    width: 166px;
+    height: 195px;
+    background-image: url('devil.png');
+    
+    bottom: -20em;
+}
+
+    #teacher_speak {
+        position: relative;
+        left: 166px;
+        width: 10em;
+        width: 10em;
+        padding: 1em;
+    }
+    
+.hidden {
+    display: none;
+}
