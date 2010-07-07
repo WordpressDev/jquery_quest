@@ -140,4 +140,4 @@ var S = [];
 var teacher = new C.teacher();
 
 var scenario = location.hash.substr(1).split('/');
-$.getScript(path_start+'authors/kk/courses/'+scenario[0]+'/scenarios/scenario_'+scenario[1]+'.js')
+$.getScript(path_start+'courses/'+scenario[0]+'/scenarios/scenario_'+scenario[1]+'.js')
