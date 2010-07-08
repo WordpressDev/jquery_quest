@@ -119,8 +119,7 @@ p, form, ul, li {
     #teacher_speak {
         position: relative;
         left: 166px;
-        width: 10em;
-        width: 10em;
+        min-width: 10em;
         padding: 1em;
     }
     
